@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .skill-collection {
+      position: relative;
+    }
+
+    .one-skill {
+      position: relative;
+    }
+
+    .one-skill div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 50%; /* Adjust the height as needed */
+      background-color: green; /* Set background color as needed */
+    }
+
+    .one-skill div:nth-child(2) {
+      top: 50%; /* Adjust the top position for the second div */
+      background-color: red; /* Set background color as needed */
+    }
+
+    span {
+      position: relative;
+      z-index: 1; /* Ensure the text is above the overlapped divs */
+    }
+  </style>
+</head>
+<body>
+  <div class="skill-collection">
+    <div class="one-skill">
+      <span>JavaScript</span>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+</body>
+</html>
